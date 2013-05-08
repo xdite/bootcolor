@@ -1,0 +1,40 @@
+<div class="span12">
+
+
+  <div class="hero-unit">
+    <h1> BootColor</h1>
+    <p>Generate your own Bootstrap color scheme from an image</p>
+    <div style="text-align:center;"><a href="https://github.com/xdite/bootcolor" class="btn btn-large">View project on Github</a></div>
+  </div>
+
+  <a class="btn btn-primary" href="#"> Primary</a>  
+
+  <div class="btn-group">
+    <button class="btn dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+
+  <h2>Provide an image</h2>
+
+
+  <%= form_tag "/switch_theme", :class => "form-search", :method => :get do %>
+
+  <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <%= text_field_tag :image_url, @url, { :class => "input input-xxlarge" } %>
+
+  <input class="btn btn-primary" name="commit" type="submit" value="Generate Color">
+
+  <% end %>
+</form> 
+
+
+
+
+</div>
