@@ -1,3 +1,4 @@
+require 'prizm'
 class ThemesController < ApplicationController
 
   def switch
